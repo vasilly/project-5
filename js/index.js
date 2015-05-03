@@ -6,7 +6,8 @@ function remCalibrate() {
 	// var size = Math.max(16,window.innerWidth/100);
 	// document.documentElement.style.fontSize = size + 'px';
 	// console.log('calibrate '+size)
-	document.getElementById('msg').innerHTML= window.innerWidth
+	document.getElementById('msg1').innerHTML= window.innerWidth;
+	document.getElementById('msg2').innerHTML= window.innerHeight;
 }
 remCalibrate();
 window.addEventListener('resize', remCalibrate, false);
