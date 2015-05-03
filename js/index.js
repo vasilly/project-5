@@ -6,6 +6,8 @@ function remCalibrate() {
 	// var size = Math.max(16,window.innerWidth/100);
 	// document.documentElement.style.fontSize = size + 'px';
 	// console.log('calibrate '+size)
+	// var root = document.querySelector(":root");
+
 	document.getElementById('msg1').innerHTML= window.innerWidth;
 	document.getElementById('msg2').innerHTML= window.innerHeight;
 }
