@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Restaurant</title>
+<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ -->  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/material_cards.css">
+
+</head>
+
+<body>
+
+  <div id="hero" class="card heroCard">
+
+    <div class="image">
+      <img src="img/restaurant.jpeg" alt="boo!">
+      <div class="title">The Food and Red Wine Restaurant</div>
+    </div>
+
+    <div class="content">
+      <p>123 Smith Street, Melbourne</p>
+      <p><i class="fa fa-phone"></i> (03) 1234 5678</p>
+    </div>
+
+    <div class="action">
+      <a href='#'>Map</a>
+    </div>
+
+  </div>
+
+
+  <div class="images_wrapper" data-ng-app="images" data-ng-controller="imagesController">
+
+    <div class="filters">
+      <input type="text" data-ng-model="txtQuery" placeholder="Search">
+
+      <select onchange="filtered();" data-ng-model="showModes" data-ng-model-options="{debounce:500}">
+        <option value="" selected>All items</option>
+        <option data-ng-repeat="item in list | orderBy:'Mode' | unique:'Mode'" value="{{item.Mode}}">{{item.Mode}}</option>
+      </select>
+
+      <select onchange="filtered();" data-ng-model="showType" data-ng-model-options="{debounce:500}">
+        <option value="" selected>All Meal Types</option>
+        <option data-ng-repeat="item in list | orderBy:'Type' | unique:'Type'" value="{{item.Type}}">{{item.Type}}</option>
+      </select>
+    </div>
+
+    <ul id="images_grid">
+
+
+      <li class="card" data-ng-repeat="item in filtered = (list | orderBy:'Name' | filter:showModes | filter:showType | filter:txtQuery)">
+
+        <div class="image">
+          <img data-ng-src="img/{{item.Image}}" alt="{{item.Name}}">
+          <div class="title">{{item.Title}}</div>
+        </div>
+
+        <div class="content">
+          <p>{{item.Name}}</p>
+        </div>
+
+        <div class="action">
+          <a href='#'>Details</a>
+        </div>
+
+      </li>
+
+    </ul>
+    <!-- img -->
+    <!--   <div class="card">
+
+  <div class="image">
+      <img src="img/WerlaFe.jpg">
+      <span class="title">1 Card Title</span>
+  </div>
+
+  <div class="content">
+      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+  </div>
+
+  <div class="action">
+      <a href='#'>This is a link</a>
+  </div>
+
+</div> -->
+
+
+
+
+
+    <p data-ng-show="filtered.length === 0">No results found.</p>
+  </div>
+
+  <script src='lib/angular.js'></script>
+  <script src='lib/angular-filter.min.js'></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
