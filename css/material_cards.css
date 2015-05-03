@@ -127,32 +127,32 @@ height:400px; */
 
 @media (max-width: 65rem) {
  .card .title, .card .content, .card .action, select  {
-   font-size: 2.2rem;
-
+/*    font-size: 2.2rem;
+ */
  }
  .card .right{color:blue;}
- input{font-size: 2.2rem;}
-}
+/*  input{font-size: 2.2rem;}
+*/}
 
 @media (max-width: 50rem) {
   .card .title, .card .content, .card .action, select  {
-    font-size: 2.5rem;
-
+/*     font-size: 2.5rem;
+ */
   }
   .card .right{color:green;}
 
-  input{font-size: 2.5rem;}
-
+/*   input{font-size: 2.5rem;}
+ */
 }
 
 @media (max-width: 30rem) {
   .card .title, .card .content, .card .action, select {
-    font-size: 3rem;
-  }
+/*     font-size: 3rem;
+ */  }
   .card .right{color:red;}
 
-  input{font-size: 3rem;}
-
+/*   input{font-size: 3rem;}
+ */
 }
 
 

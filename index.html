@@ -28,7 +28,8 @@
 
     <div class="action">
       <a href='#'>Map</a>
-      <a href='#' class="right">Map</a>
+      <a href='#'>Hours</a>
+      <a href='#' class="right">X</a>
     </div>
 
   </div>
@@ -40,12 +41,12 @@
       <input type="text" data-ng-model="txtQuery" placeholder="Search">
 
       <select onchange="filtered();" data-ng-model="showModes" data-ng-model-options="{debounce:500}">
-        <option value="" selected>All items</option>
+        <option value="" selected>All Meals</option>
         <option data-ng-repeat="item in list | orderBy:'Mode' | unique:'Mode'" value="{{item.Mode}}">{{item.Mode}}</option>
       </select>
 
       <select onchange="filtered();" data-ng-model="showType" data-ng-model-options="{debounce:500}">
-        <option value="" selected>All Meal Types</option>
+        <option value="" selected>Meal Types</option>
         <option data-ng-repeat="item in list | orderBy:'Type' | unique:'Type'" value="{{item.Type}}">{{item.Type}}</option>
       </select>
     </div>

@@ -2,6 +2,29 @@
 
 "use strict";
 
+function remCalibrate() {
+	var size = Math.max(16,window.innerWidth/100);
+	document.documentElement.style.fontSize = size + 'px';
+	console.log('calibrate '+size)
+}
+remCalibrate();
+window.addEventListener('resize', remCalibrate, false);
+
+
+// clip to a decent range size to avoid, making endless size adjustments as screens being bigger and bigger
+	// var aspect_ratio =  (window.innerHeight/window.innerWidth)/0.75
+	// var vwh =  window.innerWidth/100
+	// var rem = Math.max(8,Math.min(24,vwh*aspect_ratio))
+	//
+	// document.documentElement.style.fontSize =  rem + 'px';
+	//
+	//
+
+	// SUN to WED, 10:00 - 22:30
+	// THUR 10:00 - 23:00
+	// FRI to SAT, 10:00 - 23:30
+
+
 // Controller
 var images = angular.module("images", ["angular.filter"]);
 
