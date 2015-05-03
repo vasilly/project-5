@@ -58,7 +58,7 @@ images.controller("imagesController", function($scope){
 		},
 		{
 			"Title"		: "Sushi",
-			"Name"		: "Fresh",
+			"Name"		: "Fresh daily",
 			"Type"	 	: "Meat",
 			"Mode"	 	: "Lunch",
 			"Image" 	: "food8.jpeg"
