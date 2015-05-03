@@ -3,9 +3,10 @@
 "use strict";
 
 function remCalibrate() {
-	var size = Math.max(16,window.innerWidth/100);
-	document.documentElement.style.fontSize = size + 'px';
-	console.log('calibrate '+size)
+	// var size = Math.max(16,window.innerWidth/100);
+	// document.documentElement.style.fontSize = size + 'px';
+	// console.log('calibrate '+size)
+	document.getElementById('msg').innerHTML= window.innerWidth
 }
 remCalibrate();
 window.addEventListener('resize', remCalibrate, false);
