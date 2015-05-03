@@ -6,13 +6,15 @@ body {
 }
 input, select {
 	float: left;
-	width: 190px;
+	width: 200px;
 	margin-right: 1em;
 	font-size: 100%;
 	border: 1px solid #aaa;
 	-webkit-appearance: none;
 	height: 2em;
-	padding: 0 0.5em;
+	padding: 0 .2em;
+	margin: 0.5rem 1rem 0 0;
+
 }
 select {
 	height: 2.05em;
