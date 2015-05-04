@@ -1,10 +1,9 @@
-@import url(//fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900);
 
 html,body {
   font-family: 'Roboto', sans-serif;
   background: #FAFAFA;
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
   padding: 20px;
   margin: 0;
   color: #5A5A62;
@@ -97,10 +96,11 @@ html,body {
 
 #hero{
   width:100%;
-  margin: 0.5rem auto;
+  margin: 0 auto;
   /* height:400px; */
 }
-#images_grid li{
+.overide-card_width .card{
+  /*overide default with js on buttonclick Aa*/
   margin: 0.5rem auto;
   width:100%
   }
@@ -170,13 +170,26 @@ font-size: 2.2rem;
 }
 
 :root  { font-size: 1rem;}
-.abs{position:absolute}
-.rel{position:relative}
+.abs{position:absolute;}
+.bot-right{position:fixed;z-index: 2;right:40px;top:40px;border:1px solid;border-radius:3px;padding:0.5em;}
+.rel{position:relative;}
 .right{float:right;}
+.bot-right{}
 .sm{ font-size: 0.5rem;}
 .md{ font-size: 1.5rem;}
 .lg{ font-size: 2rem;}
 .XL{ font-size: 3rem;}
+
+/*  http://stackoverflow.com/questions/826782/css-rule-to-disable-text-selection-highlighting
+*/
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 /*rem >ie8    ~9,10*/
 
 

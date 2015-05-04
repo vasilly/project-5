@@ -9,14 +9,30 @@
 <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
  -->  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/material_cards.css">
+  <style id="custom-styles"></style>
 
 </head>
 
-<body>
 
 
 
-  <div id="hero" class="card heroCard">
+<script>
+
+
+  function resetWidthCSS( width ){
+    // document.getElementById('custom-styles').innerHTML = '#body .card-width { width: ' + width + '; }';
+    // console.log(document.getElementById('custom-styles').innerHTML)
+  }
+</script>
+
+
+
+
+<body id="body" class="rel">
+
+
+
+  <div id="hero" class="card heroCard cardwidth">
 
     <div class="card__image">
       <img class="card__img" src="img/restaurant.jpeg" alt="boo!">
@@ -36,15 +52,14 @@
     <div class="card__action">
       <a class="card__a" href='#'>Map</a>
       <a class="card__a" href='#'>Hours</a>
-      <span class="card__a right" id = "text-sizer">
-        <span class="lg" id="A1">A</span>
-        <span class="md" id="A2">A</span>
-        <span class="sm" id="A3">A</span>
-      </span>
     </div>
 
   </div>
 
+  <span class="bot-right noselect" id = "text-sizer">
+    <span class="md" id="A2">A</span>
+    <span class="sm" id="A3">A</span>
+  </span>
 
 
 
@@ -67,7 +82,7 @@
     <ul id="images_grid">
 
 
-      <li class="card" data-ng-repeat="item in filtered = (list | orderBy:'Name' | filter:showModes | filter:showType | filter:txtQuery)">
+      <li class="card cardwidth" data-ng-repeat="item in filtered = (list | orderBy:'Name' | filter:showModes | filter:showType | filter:txtQuery)">
 
         <div class="card__image">
           <img class="card__img" data-ng-src="img/{{item.Image}}" alt="{{item.Name}}">
