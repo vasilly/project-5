@@ -9,7 +9,7 @@
     // var root = document.querySelector(":root");
 
     document.getElementById('msg1').innerHTML = window.innerWidth;
-    document.getElementById('msg2').innerHTML = window.innerHeight;
+    document.getElementById('msg2').innerHTML = window.innerHeight+" : width:";
   }
   remCalibrate();
   window.addEventListener('resize', remCalibrate, false);
