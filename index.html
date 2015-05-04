@@ -13,8 +13,7 @@
 </head>
 
 <body>
-<label for="" id="msg1"></label>
-<label for="" id="msg2"></label>
+
 
 
   <div id="hero" class="card heroCard">
@@ -23,17 +22,25 @@
       <img class="card__img" src="img/restaurant.jpeg" alt="boo!">
       <div class="card__title">The Food and Red Wine Restaurant</div>
       <span class="right">III</span>
+
     </div>
 
     <div class="card__content">
+      <p class="right rel" id="msg1"></p>
+      <p class="right" id="msg2"></p>
       <p>123 Smith Street, Melbourne</p>
       <p><i class="fa fa-phone"></i> (03) 1234 5678</p>
+
     </div>
 
     <div class="card__action">
       <a class="card__a" href='#'>Map</a>
       <a class="card__a" href='#'>Hours</a>
-      <span class="card__a right" id = "text-sizer" href='#'><span class="lg">A</span>A<span class="sm">A</span> </span>
+      <span class="card__a right" id = "text-sizer">
+        <span class="lg" id="A1">A</span>
+        <span class="md" id="A2">A</span>
+        <span class="sm" id="A3">A</span>
+      </span>
     </div>
 
   </div>
@@ -107,6 +114,7 @@
   <script src='lib/angular-filter.min.js'></script>
 
   <script src="js/index.js"></script>
+  <script src="js/resize.js"></script>
 
 </body>
 

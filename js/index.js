@@ -2,51 +2,6 @@
 
 "use strict";
 
-function remCalibrate() {
-	// var size = Math.max(16,window.innerWidth/100);
-	// document.documentElement.style.fontSize = size + 'px';
-	// console.log('calibrate '+size)
-	// var root = document.querySelector(":root");
-
-	document.getElementById('msg1').innerHTML= window.innerWidth;
-	document.getElementById('msg2').innerHTML= window.innerHeight;
-}
-remCalibrate();
-window.addEventListener('resize', remCalibrate, false);
-
-var rootFontSize=1
-function changeFontSize() {
-	// var size = Math.max(16,window.innerWidth/100);
-	// document.documentElement.style.fontSize = size + 'px';
-	// console.log('calibrate '+size)
-	// var root = document.querySelector(":root");
-
-}
-
-
-document.getElementById("text-sizer").addEventListener("click", function( event ) {
-    // display the current click count inside the clicked div
-		 rootFontSize++ ;
-		if (rootFontSize>4) rootFontSize=1
-		document.getElementById('msg1').innerHTML= ("font: "+rootFontSize);
-		var root = document.querySelector(":root");
-
-root.style.fontSize = (rootFontSize+"em");
-		// document.body.style.fontSize = (rootFontSize+"rem");
-  }, false);
-// clip to a decent range size to avoid, making endless size adjustments as screens being bigger and bigger
-	// var aspect_ratio =  (window.innerHeight/window.innerWidth)/0.75
-	// var vwh =  window.innerWidth/100
-	// var rem = Math.max(8,Math.min(24,vwh*aspect_ratio))
-	//
-	// document.documentElement.style.fontSize =  rem + 'px';
-	//
-	//
-
-	// SUN to WED, 10:00 - 22:30
-	// THUR 10:00 - 23:00
-	// FRI to SAT, 10:00 - 23:30
-
 
 // Controller
 var images = angular.module("images", ["angular.filter"]);
