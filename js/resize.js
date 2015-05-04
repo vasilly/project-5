@@ -104,6 +104,8 @@
   // THUR 10:00 - 23:00
   // FRI to SAT, 10:00 - 23:30
 
-
+	window.onload = function() {
+		 document.getElementById("spinner").style.display="none";
+	};
 
 })();

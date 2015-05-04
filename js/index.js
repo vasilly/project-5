@@ -17,21 +17,21 @@ images.controller("imagesController", function($scope){
 		},
 		{
 			"Title"		: "Lean Beef",
-			"Name"		: "+Healthy Salad",
+			"Name"		: "Healthy Salad",
 			"Type"	 	: "Meat",
 			"Mode"	 	: "Dinner",
 			"Image" 	: "food2.jpeg"
 		},
 		{
 			"Title"		: "Gordon",
-			"Name"		: "Gordon, Australia",
+			"Name"		: "Gordon, Aus.",
 			"Type"	 	: "Meat",
 			"Mode"	 	: "Dinner",
 			"Image" 	: "food3.jpeg"
 		},
 		{
 			"Title"		: "Sashimi",
-			"Name"		: "Salmon or Tuna",
+			"Name"		: "Salmon",
 			"Type"	 	: "Meat",
 			"Mode"	 	: "Dinner",
 			"Image" 	: "food4.jpeg"
@@ -66,7 +66,7 @@ images.controller("imagesController", function($scope){
 		},
 		{
 			"Title"		: "Burger",
-			"Name"		: "Wholesome goodness",
+			"Name"		: "Wholesome",
 			"Type"	 	: "Meat",
 			"Mode"	 	: "Dinner",
 			"Image" 	: "food9.jpeg"

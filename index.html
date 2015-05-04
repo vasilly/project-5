@@ -76,6 +76,11 @@
     <span class="md" id="A2">A</span>
   </span>
 
+  <span class="center noselect" id="spinner">
+    <i class="fa fa-refresh fa-spin"></i>
+
+  </span>
+
 
 
   <div class="images_wrapper" data-ng-app="images" data-ng-controller="imagesController">
@@ -89,7 +94,7 @@
       </select>
 
       <select onchange="filtered();" data-ng-model="showType" data-ng-model-options="{debounce:500}">
-        <option value="" selected>Meal Types</option>
+        <option value="" selected>All Meal Types</option>
         <option data-ng-repeat="item in list | orderBy:'Type' | unique:'Type'" value="{{item.Type}}">{{item.Type}}</option>
       </select>
     </div>
