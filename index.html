@@ -15,25 +15,30 @@
 <body>
 <label for="" id="msg1"></label>
 <label for="" id="msg2"></label>
+
+
   <div id="hero" class="card heroCard">
 
-    <div class="image">
-      <img src="img/restaurant.jpeg" alt="boo!">
-      <div class="title">The Food and Red Wine Restaurant</div>
+    <div class="card__image">
+      <img class="card__img" src="img/restaurant.jpeg" alt="boo!">
+      <div class="card__title">The Food and Red Wine Restaurant</div>
+      <span class="right">III</span>
     </div>
 
-    <div class="content">
+    <div class="card__content">
       <p>123 Smith Street, Melbourne</p>
       <p><i class="fa fa-phone"></i> (03) 1234 5678</p>
     </div>
 
-    <div class="action">
-      <a href='#'>Map</a>
-      <a href='#'>Hours</a>
-      <a href='#' class="right">X</a>
+    <div class="card__action">
+      <a class="card__a" href='#'>Map</a>
+      <a class="card__a" href='#'>Hours</a>
+      <a class="card__a right" id = "text-sizer" href='#'><span class="lg">A</span>A<span class="sm">A</span> </a>
     </div>
 
   </div>
+
+
 
 
   <div class="images_wrapper" data-ng-app="images" data-ng-controller="imagesController">
@@ -57,17 +62,17 @@
 
       <li class="card" data-ng-repeat="item in filtered = (list | orderBy:'Name' | filter:showModes | filter:showType | filter:txtQuery)">
 
-        <div class="image">
-          <img data-ng-src="img/{{item.Image}}" alt="{{item.Name}}">
-          <div class="title">{{item.Title}}</div>
+        <div class="card__image">
+          <img class="card__img" data-ng-src="img/{{item.Image}}" alt="{{item.Name}}">
+          <div class="card__title">{{item.Title}}</div>
         </div>
 
-        <div class="content">
+        <div class="card__content">
           <p>{{item.Name}}</p>
         </div>
 
-        <div class="action">
-          <a href='#'>Details</a>
+        <div class="card__action">
+          <a class="card__a" href='#'>Details</a>
         </div>
 
       </li>
@@ -76,17 +81,17 @@
     <!-- img -->
     <!--   <div class="card">
 
-  <div class="image">
-      <img src="img/WerlaFe.jpg">
-      <span class="title">1 Card Title</span>
+  <div class="card__image">
+      <img class="card__img" src="img/WerlaFe.jpg">
+      <span class="card__title">1 Card Title</span>
   </div>
 
-  <div class="content">
+  <div class="card__content">
       <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
   </div>
 
-  <div class="action">
-      <a href='#'>This is a link</a>
+  <div class="card__action">
+      <a class="card__a" href='#'>This is a link</a>
   </div>
 
 </div> -->

@@ -12,7 +12,7 @@ input, select {
 	border: 1px solid #aaa;
 	-webkit-appearance: none;
 	height: 2em;
-	padding: 0 .2em;
+	padding: 0.2rem .2em;
 	margin: 0.5rem 1rem 0 0;
 
 }

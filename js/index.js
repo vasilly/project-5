@@ -14,7 +14,23 @@ function remCalibrate() {
 remCalibrate();
 window.addEventListener('resize', remCalibrate, false);
 
+var rootFontSize=1
+function changeFontSize() {
+	// var size = Math.max(16,window.innerWidth/100);
+	// document.documentElement.style.fontSize = size + 'px';
+	// console.log('calibrate '+size)
+	// var root = document.querySelector(":root");
 
+}
+
+
+document.getElementById("text-sizer").addEventListener("click", function( event ) {
+    // display the current click count inside the clicked div
+		 rootFontSize++ ;
+		if (rootFontSize>3) rootFontSize=1
+		document.getElementById('msg1').innerHTML= ("font: "+rootFontSize);
+		document.body.style.fontSize = (rootFontSize+"rem");
+  }, false);
 // clip to a decent range size to avoid, making endless size adjustments as screens being bigger and bigger
 	// var aspect_ratio =  (window.innerHeight/window.innerWidth)/0.75
 	// var vwh =  window.innerWidth/100
