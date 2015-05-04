@@ -144,8 +144,8 @@ font-size: 2.2rem;
 /*    font-size: 2.2rem;
  */
  }
- .card .right{color:blue;}
-/*  input{font-size: 2.2rem;}
+/*  .card .right{color:blue;}
+*//*  input{font-size: 2.2rem;}
 */}
 
 @media (max-width: 50rem) {
@@ -153,7 +153,6 @@ font-size: 2.2rem;
 /*     font-size: 2.5rem;
  */
   }
-  .card .right{color:green;}
 
 /*   input{font-size: 2.5rem;}
  */
@@ -163,21 +162,36 @@ font-size: 2.2rem;
   .card__title, .card__content, .card__action, select {
 /*     font-size: 3rem;
  */  }
-  .card .right{color:red;}
 
 /*   input{font-size: 3rem;}
  */
 }
-
+/*
 @media (min-width: 640px) and (max-width: 767px) {
   .card .right{color:orange;}
 
-}
+} */
 
+
+@media screen and (min-device-width: 60px) and (orientation: landscape){
+  /* some CSS here */
+  .card .right{color: red;}
+
+}
+@media only screen and (max-device-width: 60px) {
+    /* STYLES HERE for DEVICES with physical max-screen width of 480px */
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+     /* For portrait layouts only */
+     .card .right{color: blue;}
+
+   }
 :root  { font-size: 1rem;}
 .abs{position:absolute;}
 .bot-right{
   position:fixed;z-index: 2;right:40px;top:40px;border:1px solid;border-radius:0.2rem;padding:0.5em;
+  width:2cm;height:2cm;
   }
 .center{
   position:fixed;z-index: 2;right:50%;top:50%;border:1px solid;border-radius:0.2rem;padding:0.5em;
