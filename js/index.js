@@ -29,7 +29,10 @@ document.getElementById("text-sizer").addEventListener("click", function( event 
 		 rootFontSize++ ;
 		if (rootFontSize>3) rootFontSize=1
 		document.getElementById('msg1').innerHTML= ("font: "+rootFontSize);
-		document.body.style.fontSize = (rootFontSize+"rem");
+		var root = document.querySelector(":root");
+
+root.style.fontSize = (rootFontSize+"em");
+		// document.body.style.fontSize = (rootFontSize+"rem");
   }, false);
 // clip to a decent range size to avoid, making endless size adjustments as screens being bigger and bigger
 	// var aspect_ratio =  (window.innerHeight/window.innerWidth)/0.75
