@@ -99,7 +99,7 @@ html,body {
   margin: 0 auto;
   /* height:400px; */
 }
-.overide-card_width .card{
+.overide-card_width .card,.overide-card_width input,.overide-card_width select{
   /*overide default with js on buttonclick Aa*/
   margin: 0.5rem auto;
   width:100%
