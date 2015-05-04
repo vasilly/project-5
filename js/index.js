@@ -27,7 +27,7 @@ function changeFontSize() {
 document.getElementById("text-sizer").addEventListener("click", function( event ) {
     // display the current click count inside the clicked div
 		 rootFontSize++ ;
-		if (rootFontSize>3) rootFontSize=1
+		if (rootFontSize>4) rootFontSize=1
 		document.getElementById('msg1').innerHTML= ("font: "+rootFontSize);
 		var root = document.querySelector(":root");
 
