@@ -93,7 +93,6 @@
   <div class="images_wrapper" data-ng-app="images" data-ng-controller="imagesController">
 
     <div class="filters">
-      <input type="text" data-ng-model="txtQuery" placeholder="Search">
 
       <select onchange="filtered();" data-ng-model="showModes" data-ng-model-options="{debounce:500}">
         <option value="" selected>All Meals</option>
@@ -104,6 +103,9 @@
         <option value="" selected>All Meal Types</option>
         <option data-ng-repeat="item in list | orderBy:'Type' | unique:'Type'" value="{{item.Type}}">{{item.Type}}</option>
       </select>
+
+      <input type="text" data-ng-model="txtQuery" placeholder="Search">
+
     </div>
 
     <ul id="images_grid">
@@ -167,7 +169,7 @@
 <p class="between-769-and-1024">between-769-and-1024</p>
 <br>
 
-<p class="between-769-and-1024">between-769-and-1024</p>
+<p class="between-481-and-1024">between-769-and-1024</p>
 <p class="over_1024">over_1024</p>
 <br>
 
@@ -184,14 +186,14 @@
 <br>
 
 
-<p class="resoultion-200dpi">resoultion-200dpi</p>
-<p class="resoultion-250dpi">resoultion-250dpi</p>
-<p class="resoultion-270dpi">resoultion-270dpi</p>
-<p class="resoultion-300dpi">resoultion-300dpi</p>
-<p class="resoultion-320dpi">resoultion-320dpi</p>
-<p class="resoultion-340dpi">resoultion-340dpi</p>
-<p class="resoultion-360dpi">resoultion-360dpi</p>
-<p class="resoultion-380dpi">resoultion-380dpi</p>
+<p class="resolution-200dpi">resolution-200dpi</p>
+<p class="resolution-250dpi">resolution-250dpi</p>
+<p class="resolution-270dpi">resolution-270dpi</p>
+<p class="resolution-300dpi">resolution-300dpi</p>
+<p class="resolution-320dpi">resolution-320dpi</p>
+<p class="resolution-340dpi">resolution-340dpi</p>
+<p class="resolution-360dpi">resolution-360dpi</p>
+<p class="resolution-380dpi">resolution-380dpi</p>
 <br>
 
 
