@@ -1,0 +1,105 @@
+@media (min-width: 800px) and (max-width: 1200px) {}
+@media (max-width: 65rem) {
+  /*  .card .right{color:blue;}
+*/
+  /*  input{font-size: 2.2rem;}
+*/
+}
+@media (max-width: 50rem) {
+  .card__title, .card__content, .card__action, select {
+    /*     font-size: 2.5rem;
+ */
+  }
+  /*   input{font-size: 2.5rem;}
+ */
+}
+@media (max-width: 30rem) {
+  .card__title, .card__content, .card__action, select {
+    /*     font-size: 3rem;
+ */
+  }
+  /*   input{font-size: 3rem;}
+ */
+}
+/*
+@media (min-width: 640px) and (max-width: 767px) {
+  .card .right{color:orange;}
+
+} */
+
+@media screen and (min-device-width: 60px) and (orientation: landscape) {
+  /* some CSS here */
+
+  .card .right {
+    color: red;
+  }
+}
+@media only screen and (max-device-width: 60px) {
+  /* STYLES HERE for DEVICES with physical max-screen width of 480px */
+}
+/* different techniques for iPad screening */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* For portrait layouts only */
+
+  .card .right {
+    color: blue;
+  }
+}
+.overide-card_width .card, .overide-card_width input, .overide-card_width select {
+  /*overide default with js on buttonclick Aa*/
+
+  margin: 0.5rem auto;
+  width: 100%
+}
+
+
+
+/* @media (min-width: 768px) and (max-width: 1023px) {
+  p {
+    font-size: 18px;
+  }
+} */
+
+
+/*
+How does this differ from bootstraps simple
+…Extra small devices (phones, less than 768px) /
+/ No media query since this is the default in Bootstrap
+
+Small devices (tablets, 768px and up)
+@media (min-width: 768px) { … }
+
+Medium devices (desktops, 992px and up)
+@media (min-width: 992px) { … }
+
+Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { … }… */
+
+
+/* different techniques for iPad screening */
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* tablet portrait */
+  }
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* tablet landscape */
+  }
+
+  /* smart-phone detect 2012*/
+  @media (-webkit-min-device-pixel-ratio: 1.5), Webkit
+       (min-resolution: 1.5dppx)              The Future
+  {}
+}
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+
+    /* Retina-specific stuff here */
+
+}

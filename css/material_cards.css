@@ -99,11 +99,7 @@ html,body {
   margin: 0 auto;
   /* height:400px; */
 }
-.overide-card_width .card,.overide-card_width input,.overide-card_width select{
-  /*overide default with js on buttonclick Aa*/
-  margin: 0.5rem auto;
-  width:100%
-  }
+
 #hero .title{
 /*   width:100%;
 height:400px; */
@@ -138,60 +134,11 @@ font-size: 2.2rem;
 } */
 
 
-
-@media (max-width: 65rem) {
-  .card__title, .card__content, .card__action, select  {
-/*    font-size: 2.2rem;
- */
- }
-/*  .card .right{color:blue;}
-*//*  input{font-size: 2.2rem;}
-*/}
-
-@media (max-width: 50rem) {
-  .card__title, .card__content, .card__action, select  {
-/*     font-size: 2.5rem;
- */
-  }
-
-/*   input{font-size: 2.5rem;}
- */
-}
-
-@media (max-width: 30rem) {
-  .card__title, .card__content, .card__action, select {
-/*     font-size: 3rem;
- */  }
-
-/*   input{font-size: 3rem;}
- */
-}
-/*
-@media (min-width: 640px) and (max-width: 767px) {
-  .card .right{color:orange;}
-
-} */
-
-
-@media screen and (min-device-width: 60px) and (orientation: landscape){
-  /* some CSS here */
-  .card .right{color: red;}
-
-}
-@media only screen and (max-device-width: 60px) {
-    /* STYLES HERE for DEVICES with physical max-screen width of 480px */
-}
-/* different techniques for iPad screening */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-     /* For portrait layouts only */
-     .card .right{color: blue;}
-
-   }
 :root  { font-size: 1rem;}
 .abs{position:absolute;}
 .bot-right{
   position:fixed;z-index: 2;right:40px;top:40px;border:1px solid;border-radius:3px;padding:0.5em;
-  width:3cm;height:3cm;font-size:1.5cm;
+  width:3cm;height:3cm;font-size:1.5cm;background-color: rgba(0,0,0,0.2);
   }
 .center{
   position:fixed;z-index: 2;right:50%;top:50%;border:1px solid;border-radius:3px;padding:0.5em;
@@ -201,8 +148,9 @@ font-size: 2.2rem;
 .rel{position:relative;}
 .right{float:right;}
 
-.tny{ font-size: 0.25rem;}
-.sm{ font-size: 0.5rem;}
+.sm2{ font-size: 0.2rem;}
+.sm4{ font-size: 0.4rem;}
+.sm{ font-size: 0.6rem;}
 .md{ font-size: 1.5rem;}
 .lg{ font-size: 2rem;}
 .XL{ font-size: 3rem;}
@@ -219,36 +167,12 @@ font-size: 2.2rem;
 }
 
 .outline {
-  color:white;
-  opacity: 0.3;
-  text-shadow:-1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
+  color: white;
+
 }
 /*rem >ie8    ~9,10*/
 
 
-/* @media (min-width: 768px) and (max-width: 1023px) {
-  p {
-    font-size: 18px;
-  }
-} */
-
-
-/*
-How does this differ from bootstraps simple
-…Extra small devices (phones, less than 768px) /
-/ No media query since this is the default in Bootstrap
-
-Small devices (tablets, 768px and up)
-@media (min-width: 768px) { … }
-
-Medium devices (desktops, 992px and up)
-@media (min-width: 992px) { … }
-
-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { … }… */
 
 /* card {}
 card--hero {}
