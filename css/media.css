@@ -82,40 +82,42 @@
 
 
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
-.between-481-and-1024 {color: green;}}
+@media only screen {
+.only-screen {color: green;}}
 
-@media only screen and (min-device-width: 2014px) and (max-device-width: 6000px) {
-.over_1024 {color: green;}}
+
+
+
+@media only screen and (min-device-width: 1px) and (max-device-width: 320px) {
+.between-1-and-320 {color: green;}}
+
+@media only screen and (min-device-width: 321px) and (max-device-width: 480px) {
+.between-321-and-480 {color: green;}}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+.between-481-and-768 {color: green;}}
+
 
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 .between-769-and-1024 {color: green;}}
 
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 12000px) {
+.over_1024 {color: green;}}
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+.between-481-and-1024 {color: green;}}
+
+
+
 @media only screen and (orientation: handheld) {.handheld {color: green;}}
 @media only screen and (orientation: portrait) {.portrait {color: green;}}
-@media only screen and (orientation: landscape) {
-  .landscape {
-    color: green;
-  }
-}
+@media only screen and (orientation: landscape) {.landscape {color: green;}}
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  .webkit-min-device-pixel-ratio-2 {
-    color: green;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
-  .webkit-min-device-pixel-ratio-1.5 {
-    color: green;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1) {
-  .webkit-min-device-pixel-ratio-1 {
-    color: green;
-  }
-}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {.webkit-min-device-pixel-ratio-2 {color: green;}}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {.webkit-min-device-pixel-ratio-1_5 {color: green;}}
+@media only screen and (-webkit-min-device-pixel-ratio: 1) {.webkit-min-device-pixel-ratio-1 {color: green;}}
 
 @media screen and (min-aspect-ratio: 1/1) {.min-aspect-ratio1_1 {color: green;}}
 @media screen and (-webkit-min-device-pixel-ratio: 1/1) {.-webkit-min-device-pixel-ratio1_3 {color: green;}}
