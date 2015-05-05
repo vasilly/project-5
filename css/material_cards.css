@@ -137,8 +137,10 @@ font-size: 2.2rem;
 :root  { font-size: 1rem;}
 .abs{position:absolute;}
 .bot-right{
-  position:fixed;z-index: 2;right:40px;top:40px;border:1px solid;border-radius:3px;padding:0.5em;
-  width:3cm;height:3cm;font-size:1.5cm;background-color: rgba(0,0,0,0.2);
+  position:fixed;z-index: 2;right:40px;top:40px;
+border:1px solid;border-radius:3px;padding:0.5em;
+/* width:3cm;height:3cm;font-size:1.5cm;
+ *//* background-color: rgba(0,0,0,0.2); */
   }
 .center{
   position:fixed;z-index: 2;right:50%;top:50%;border:1px solid;border-radius:3px;padding:0.5em;
@@ -177,7 +179,7 @@ font-size: 2.2rem;
   color: white;
   /* color: rgba(0,0,0,0.1); */
   /* opacity: 0.03; */
-  text-shadow: 1px 1px 0 #000;
+  text-shadow: 1px 1px 3px #000;
 
 }
 
