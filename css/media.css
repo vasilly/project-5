@@ -116,7 +116,6 @@ and (max-device-width : 480px) {
   .mobile_320-480{color: green;}
 }
 
-/* iPads (landscape) ----------- */
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
@@ -124,12 +123,10 @@ and (orientation : landscape) {
   .tablet-landscape{color: green;}
 }
 
-/* iPads (portrait) ----------- */
 @media only screen
-and (min-device-width : 1024px)
+and (min-device-width : 480px)
 and (orientation : portrait) {
   .tablet-portrait{color: green;}
-
 }
 
 /* The New iPad (iPad 3) ----------- */
