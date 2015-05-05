@@ -51,8 +51,6 @@
 /* different techniques for iPad screening */
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* For portrait layouts only */
-
   .between-481-and-1024 {
     color: green;
   }
@@ -66,26 +64,67 @@
   margin: 0.5rem auto;
   width: 100%
 }
-@media only screen and (min-resolution: 300dpi) {
-  .resoultion-300dpi {
-    color: green;
-  }
-}
+ @media only screen and (min-resolution: 200dpi) {.resoultion-200dpi {color: green;}}
+@media only screen and (min-resolution: 250dpi) {.resoultion-250dpi {color: green;}}
+@media only screen and (min-resolution: 270dpi) {.resoultion-270dpi {color: green;}}
+@media only screen and (min-resolution: 300dpi) {.resoultion-300dpi {color: green;}}
+@media only screen and (min-resolution: 320dpi) {.resoultion-320dpi {color: green;}}
+@media only screen and (min-resolution: 340dpi) {.resoultion-340dpi {color: green;}}
+@media only screen and (min-resolution: 360dpi) {.resoultion-360dpi {color: green;}}
+@media only screen and (min-resolution: 380dpi) {.resoultion-380dpi {color: green;}}
+/*
+@media only screen and (max-width: 40em) { {.max-width-40em {color: green;}}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { .between-40em_60em {color: green;} } min-width 641px and max-width 1024px, use when QAing tablet-only issues
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { .between-64em_90em {color: green;} } min-width 641px and max-width 1024px, use when QAing tablet-only issues
+@media only screen and (min-width: 90em) and (max-width: 120em) { .between-90em_120em {color: green;} } min-width 641px and max-width 1024px, use when QAing tablet-only issues
+
+ */
+
+
+
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
-  .between-481-and-1024 {
-    color: green;
-  }
-}
-@media only screen and (orientation: portrait) {
-  .portrait {
-    color: green;
-  }
-}
+.between-481-and-1024 {color: green;}}
+
+@media only screen and (min-device-width: 2014px) and (max-device-width: 6000px) {
+.over_1024 {color: green;}}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+.between-769-and-1024 {color: green;}}
+
+@media only screen and (orientation: handheld) {.handheld {color: green;}}
+@media only screen and (orientation: portrait) {.portrait {color: green;}}
 @media only screen and (orientation: landscape) {
   .landscape {
     color: green;
   }
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .webkit-min-device-pixel-ratio-2 {
+    color: green;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  .webkit-min-device-pixel-ratio-1.5 {
+    color: green;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) {
+  .webkit-min-device-pixel-ratio-1 {
+    color: green;
+  }
+}
+
+@media screen and (min-aspect-ratio: 1/1) {.min-aspect-ratio1_1 {color: green;}}
+@media screen and (-webkit-min-device-pixel-ratio: 1/1) {.-webkit-min-device-pixel-ratio1_3 {color: green;}}
+@media screen and (-webkit-max-device-pixel-ratio: 1/1) {.-webkit-max-device-pixel-ratio1_4 {color: green;}}
+
+
+
+
+
 /* @media (min-width: 768px) and (max-width: 1023px) {
   p {
     font-size: 18px;
