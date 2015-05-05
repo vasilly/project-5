@@ -145,6 +145,7 @@ font-size: 2.2rem;
   }
   #A1{font-size:1cm;}
   #A2{font-size:0.5cm;}
+  #A3{font-size:0.25cm;}
 .rel{position:relative;}
 .right{float:right;}
 
@@ -170,6 +171,8 @@ font-size: 2.2rem;
   color: white;
 
 }
+
+.offscreen{}
 /*rem >ie8    ~9,10*/
 
 
