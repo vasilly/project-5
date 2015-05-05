@@ -34,11 +34,11 @@
     A2.classList.remove("outline");
     A3.classList.remove("outline");
     if (id === 1)
-      A1.classList.add("outline");
+      A3.classList.add("outline");
     else if (id === 2)
       A2.classList.add("outline");
     else
-      A3.classList.add("outline");
+      A1.classList.add("outline");
 
   }
 
