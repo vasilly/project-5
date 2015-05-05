@@ -121,7 +121,8 @@ and (max-device-width : 480px) {
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape) {
-/* Styles */
+  .table-landscape{color: green;}
+
 }
 
 /* iPads (portrait) ----------- */
@@ -129,7 +130,8 @@ and (orientation : landscape) {
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
-/* Styles */
+  .tablet-portrait{color: green;}
+
 }
 
 /* The New iPad (iPad 3) ----------- */
@@ -137,8 +139,8 @@ and (orientation : portrait) {
 and (min-device-width: 1536px)
 and (max-device-width: 2048px)
 and (-webkit-min-device-pixel-ratio: 2) {
-/* Styles */
-
+  .tablet-hd{color: green;}
+}
 
 
 
