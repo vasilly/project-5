@@ -97,7 +97,7 @@
 @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 .between-481-and-768 {color: green;}}
 
-
+/**/
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 .between-769-and-1024 {color: green;}}
 
@@ -105,10 +105,16 @@
 @media only screen and (min-device-width: 1025px) and (max-device-width: 12000px) {
 .over_1024 {color: green;}}
 
-
+/**/
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
 .between-481-and-1024 {color: green;}}
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .mobile_320-480{color: green;}
+}
 
 
 @media only screen and (orientation: handheld) {.handheld {color: green;}}
