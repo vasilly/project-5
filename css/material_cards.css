@@ -190,15 +190,18 @@ font-size: 2.2rem;
 :root  { font-size: 1rem;}
 .abs{position:absolute;}
 .bot-right{
-  position:fixed;z-index: 2;right:40px;top:40px;border:1px solid;border-radius:0.2rem;padding:0.5em;
-  width:2cm;height:2cm;
+  position:fixed;z-index: 2;right:40px;top:40px;border:1px solid;border-radius:3px;padding:0.5em;
+  width:3cm;height:3cm;font-size:1.5cm;
   }
 .center{
-  position:fixed;z-index: 2;right:50%;top:50%;border:1px solid;border-radius:0.2rem;padding:0.5em;
+  position:fixed;z-index: 2;right:50%;top:50%;border:1px solid;border-radius:3px;padding:0.5em;
   }
+  #A1{font-size:1cm;}
+  #A2{font-size:0.5cm;}
 .rel{position:relative;}
 .right{float:right;}
-.bot-right{}
+
+.tny{ font-size: 0.25rem;}
 .sm{ font-size: 0.5rem;}
 .md{ font-size: 1.5rem;}
 .lg{ font-size: 2rem;}
@@ -213,6 +216,15 @@ font-size: 2.2rem;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.outline {
+  color:white;
+  opacity: 0.3;
+  text-shadow:-1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
 /*rem >ie8    ~9,10*/
 
