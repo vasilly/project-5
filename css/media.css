@@ -64,7 +64,7 @@
   margin: 0.5rem auto;
   width: 100%
 }
- @media only screen and (min-resolution: 200dpi) {.resoultion-200dpi {color: green;}}
+@media only screen and (min-resolution: 200dpi) {.resoultion-200dpi {color: green;}}
 @media only screen and (min-resolution: 250dpi) {.resoultion-250dpi {color: green;}}
 @media only screen and (min-resolution: 270dpi) {.resoultion-270dpi {color: green;}}
 @media only screen and (min-resolution: 300dpi) {.resoultion-300dpi {color: green;}}
@@ -121,8 +121,7 @@ and (max-device-width : 480px) {
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape) {
-  .table-landscape{color: green;}
-
+  .tablet-landscape{color: green;}
 }
 
 /* iPads (portrait) ----------- */
