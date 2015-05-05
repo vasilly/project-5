@@ -9,8 +9,8 @@
 
 
   function remCalibrate() {
-    document.getElementById('msg1').innerHTML = window.innerWidth;
-    document.getElementById('msg2').innerHTML = window.innerHeight + " : width:";
+    document.getElementById('msg1').innerHTML = "width:" + window.innerWidth;
+    document.getElementById('msg2').innerHTML = "height:" + window.innerHeight;
   }
   remCalibrate();
   window.addEventListener('resize', remCalibrate, false);
