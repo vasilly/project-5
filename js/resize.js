@@ -50,9 +50,11 @@
   window.onload = function() {
     // remove spinner onload
     document.getElementById("spinner").style.display = "none";
-    setTimeout(function() {
-      document.getElementById('text-sizer').style.display = "none";
-    }, 90000);
+
+    // setTimeout(function() {
+    //   document.getElementById('text-sizer').style.display = "none";
+    // }, 90000);
+
   };
 
 })();

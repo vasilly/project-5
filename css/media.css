@@ -112,10 +112,18 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 320px)
-and (max-device-width : 480px) {
-  .mobile_320-480{color: green;}
+and (max-device-width : 480px)
+and (orientation : portrait) {
+  .mobile_320-480-portrait {color: green;}
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : landscape) {
+  .mobile_320-480-landscape {color: green;}
 }
 
+/* iPads (landscape) ----------- */
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
@@ -123,10 +131,13 @@ and (orientation : landscape) {
   .tablet-landscape{color: green;}
 }
 
+/* iPads (portrait) ----------- */
 @media only screen
-and (min-device-width : 480px)
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : portrait) {
   .tablet-portrait{color: green;}
+
 }
 
 /* The New iPad (iPad 3) ----------- */
