@@ -43,7 +43,7 @@ function changePhoneIcon(id) {
     A3.classList.add("outline");
   else if (id === 2)
     A2.classList.add("outline");
-  else (id === 3)
+  else if(id === 3)
     A1.classList.add("outline");
 
 }
