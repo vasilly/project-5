@@ -10,8 +10,8 @@
 		mql = window.matchMedia("(orientation: portrait)");
 		if (mql.matches) {
 			document.body.classList.add("overide-card_width"); //ie10
-			ROOT.style.fontSize = (ROOT_FONT_SIZE * 16 + "px");
-			changePhoneIcon(1);
+			ROOT.style.fontSize = (3 * 16 + "px");
+			changePhoneIcon(3);
 		} else {}
 
 function onResize() {
