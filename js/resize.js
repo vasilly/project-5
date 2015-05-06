@@ -14,7 +14,7 @@ function onResize() {
   // document.getElementById('msg2').innerHTML = "height:" + window.innerHeight;
   var mql = window.matchMedia("(orientation: portrait)");
   if (mql.matches) {
-    document.body.classList.toggle("overide-card_width"); //ie10
+    document.body.classList.add("overide-card_width"); //ie10
     ROOT.style.fontSize = (ROOT_FONT_SIZE * 16 + "px");
     changePhoneIcon(ROOT_FONT_SIZE);
   } else {
