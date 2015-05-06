@@ -74,7 +74,7 @@ images.controller("imagesController", function($scope){
 		{
 			"Title"		: "Bread",
 			"Name"		: "Baked Fresh",
-			"Type"	 	: "Meat",
+			"Type"	 	: "Vegetarian",
 			"Mode"	 	: "Lunch",
 			"Image" 	: "food10.jpeg"
 		}
@@ -91,5 +91,5 @@ function filtered(){
 	setTimeout(function(){
 		grid.className = ""; // Remove class to animate items back in
 	},550);
-	
+
 }

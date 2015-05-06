@@ -3,17 +3,26 @@
 
   var
     ROOT_FONT_SIZE = 1,
+		ROOT = document.querySelector(":root"),
     A1 = document.getElementById('A1'),
     A2 = document.getElementById('A2'),
     A3 = document.getElementById('A3');
 
 
-  function remCalibrate() {
-    document.getElementById('msg1').innerHTML = "width:" + window.innerWidth;
-    document.getElementById('msg2').innerHTML = "height:" + window.innerHeight;
+function onResize() {
+  // document.getElementById('msg1').innerHTML = "width:" + window.innerWidth;
+  // document.getElementById('msg2').innerHTML = "height:" + window.innerHeight;
+  var mql = window.matchMedia("(orientation: portrait)");
+  if (mql.matches) {
+    document.body.classList.toggle("overide-card_width"); //ie10
+    ROOT.style.fontSize = (ROOT_FONT_SIZE * 16 + "px");
+    changePhoneIcon(ROOT_FONT_SIZE);
+  } else {
+
   }
-  remCalibrate();
-  window.addEventListener('resize', remCalibrate, false);
+}
+  onResize();
+  window.addEventListener('resize', onResize, false);
 
   document.getElementById("text-sizer").addEventListener("click", function(event) {
     // 1 = screen
@@ -23,8 +32,7 @@
     if (ROOT_FONT_SIZE > 3) ROOT_FONT_SIZE = 1;
     if ((ROOT_FONT_SIZE === 1) || (ROOT_FONT_SIZE === 3))
       document.body.classList.toggle("overide-card_width"); //ie10
-    var root = document.querySelector(":root");
-    root.style.fontSize = (ROOT_FONT_SIZE*16 + "px");
+    ROOT.style.fontSize = (ROOT_FONT_SIZE*16 + "px");
     changePhoneIcon(ROOT_FONT_SIZE);
   }, false);
 
@@ -33,7 +41,7 @@
     A1.classList.remove("outline");
     A2.classList.remove("outline");
     A3.classList.remove("outline");
-		
+
     if (id === 1)
       A3.classList.add("outline");
     else if (id === 2)
