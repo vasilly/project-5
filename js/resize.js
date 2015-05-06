@@ -6,20 +6,18 @@
 		ROOT = document.querySelector(":root"),
     A1 = document.getElementById('A1'),
     A2 = document.getElementById('A2'),
-    A3 = document.getElementById('A3');
-
+    A3 = document.getElementById('A3'),
+		mql = window.matchMedia("(orientation: portrait)");
+		if (mql.matches) {
+			document.body.classList.add("overide-card_width"); //ie10
+			ROOT.style.fontSize = (ROOT_FONT_SIZE * 16 + "px");
+			changePhoneIcon(1);
+		} else {}
 
 function onResize() {
   // document.getElementById('msg1').innerHTML = "width:" + window.innerWidth;
   // document.getElementById('msg2').innerHTML = "height:" + window.innerHeight;
-  var mql = window.matchMedia("(orientation: portrait)");
-  if (mql.matches) {
-    document.body.classList.add("overide-card_width"); //ie10
-    ROOT.style.fontSize = (ROOT_FONT_SIZE * 16 + "px");
-    changePhoneIcon(ROOT_FONT_SIZE);
-  } else {
 
-  }
 }
   onResize();
   window.addEventListener('resize', onResize, false);
