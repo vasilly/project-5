@@ -24,7 +24,7 @@
     if ((ROOT_FONT_SIZE === 1) || (ROOT_FONT_SIZE === 3))
       document.body.classList.toggle("overide-card_width"); //ie10
     var root = document.querySelector(":root");
-    root.style.fontSize = (ROOT_FONT_SIZE + "em");
+    root.style.fontSize = (ROOT_FONT_SIZE*16 + "px");
     changePhoneIcon(ROOT_FONT_SIZE);
   }, false);
 
@@ -33,6 +33,7 @@
     A1.classList.remove("outline");
     A2.classList.remove("outline");
     A3.classList.remove("outline");
+		
     if (id === 1)
       A3.classList.add("outline");
     else if (id === 2)

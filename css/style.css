@@ -7,19 +7,18 @@ body {
 input, select {
 	float: left;
 	width: 10rem;/*same width as .card*/
-	margin-right: 1em;
 	font-size: 100%;
 	border: 1px solid #aaa;
 	-webkit-appearance: none;
 	height: 2em;
-	padding: 0.2rem .2em;
+	padding: 0.2rem .2em ;
 	margin: 0.5rem 1rem 0 0;
-
+	margin-left: -5px;
 }
 
 .filters {
-	/* padding: 1.5em 0 3em 0; */
-}
+/* 	padding: 1.5em 0 3em 0;
+ */}
 .images_wrapper {
 	padding: 0.5em;
 }

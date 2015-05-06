@@ -17,7 +17,7 @@ html,body {
 .card {
   display: inline-block;
   vertical-align: top;
-  width: 8rem;
+  width: 12rem;
   position: relative;
   overflow: hidden;
   /* margin: 8px 0 16px 0; */
@@ -148,9 +148,9 @@ border:1px solid;border-radius:3px;padding:0.5em;
   .button-box{
     border:1px solid;border-radius:3px;padding:0.5em;
   }
-  #A1{font-size:1cm;}
-  #A2{font-size:0.5cm;}
-  #A3{font-size:0.25cm;}
+/*   #A1{font-size:1cm;}
+#A2{font-size:0.5cm;}
+#A3{font-size:0.25cm;} */
 .rel{position:relative;}
 .right{float:right;}
 
@@ -182,7 +182,7 @@ border:1px solid;border-radius:3px;padding:0.5em;
   color: white;
   /* color: rgba(0,0,0,0.1); */
   /* opacity: 0.03; */
-  text-shadow: 1px 1px 3px #000;
+  text-shadow: 1px 1px 2px #000;
 
 }
 
