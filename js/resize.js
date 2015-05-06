@@ -28,6 +28,8 @@ function onResize() {
     // 1 = screen
     // 2 = tablet
     // 3 = phone
+		document.body.classList.remove("overide-card_width"); //ie10
+
     ROOT_FONT_SIZE++;
     if (ROOT_FONT_SIZE > 3) ROOT_FONT_SIZE = 1;
     if ((ROOT_FONT_SIZE === 1) || (ROOT_FONT_SIZE === 3))
