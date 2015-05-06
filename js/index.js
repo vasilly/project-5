@@ -87,7 +87,9 @@ function filtered(){
 	"use strict";
 	var grid = document.getElementById("images_grid");
 	grid.className = "filter_down"; // Add class that animates out items
+
 	setTimeout(function(){
 		grid.className = ""; // Remove class to animate items back in
 	},550);
+	
 }
