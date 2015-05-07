@@ -99,7 +99,7 @@
 
   <div class="" data-ng-app="images" data-ng-controller="imagesController">
 
-    <div class="_filters">
+    <div class="">
       <select class="standardCardWidth" onchange="filtered();" data-ng-model="showModes" data-ng-model-options="{debounce:500}">
         <option value="" selected>All Meals</option>
         <option data-ng-repeat="item in list | orderBy:'Mode' | unique:'Mode'" value="{{item.Mode}}">{{item.Mode}}</option>

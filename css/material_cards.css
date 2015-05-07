@@ -156,7 +156,7 @@ font-size: 2.2rem;
 
   background-color: #C62828;
 }
-span {
+span, .card__title {
   /* transitions */
 
   -webkit-transition: width 0.65s, height 0.65s, background-color 0.65s, font 0.65s, -webkit-transform 0.65s;
@@ -257,7 +257,7 @@ card__p {}
 -card__a {}
  */
 
-/* 
+/*
 #spinner {
   text-align: center;
   width:100%;

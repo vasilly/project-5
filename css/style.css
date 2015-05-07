@@ -4,7 +4,7 @@ body {
 	/* max-width: 1100px; */
 	/* margin: 0 auto 1em auto; */
 }
-input, select, .aa {
+input, select {
 	float: left;
 	font-size: 100%;
 	/* -webkit-appearance: none; */
@@ -16,9 +16,6 @@ input, select, .aa {
 .standardCardWidth{
 	width: 12rem;
 	border: 1px solid #aaa;
-}
-.filters {
-	/* NOT USED */
 }
 
 ul {
