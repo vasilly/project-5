@@ -171,9 +171,9 @@ span {
 .center {
   position: fixed;
   z-index: 2;
-  right: 50%;
-  top: 50%;
-  
+  right: 45%;
+  top: 45%;
+
   border: 1px solid;
   border-radius: 3px;
   padding: 0.5em;
