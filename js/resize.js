@@ -54,7 +54,7 @@ function changePhoneIcon(id) {
 // FRI to SAT, 10:00 - 23:30
 
 function removeSpinner() {
-  document.getElementById("spinner").style.display = "none";
+  // document.getElementById("spinner").style.display = "none";
   // setTimeout(function() {
   //   document.getElementById('text-sizer').style.display = "none";
   // }, 90000);
