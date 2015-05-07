@@ -167,7 +167,7 @@ font-size: 2.2rem;
 -ms-transition: all 0.2s ease; */
 }
 .underline {}
-.center {
+.spinner {
   position: fixed;
   z-index: 2;
   right: 45%;
@@ -176,6 +176,12 @@ font-size: 2.2rem;
   border: 1px solid;
   border-radius: 3px;
   padding: 0.5em;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: #b0e0e6;
 }
 .button-box {
   border: 1px solid;
