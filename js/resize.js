@@ -68,7 +68,7 @@ document.getElementById("text-sizer").addEventListener("click", resize, false);
 
 window.onload = function() {
 	// remove spinner onload
-	// document.getElementById("spinner").style.display = "none";
+	document.getElementById("spinner").style.display = "none";
 
 	// setTimeout(function() {
 	//   document.getElementById('text-sizer').style.display = "none";
