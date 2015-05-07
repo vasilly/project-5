@@ -136,7 +136,7 @@ font-size: 2.2rem;
 
 
 .abs{position:absolute;}
-.bot-right{
+.btn-resize{
   position:fixed;
   z-index: 2;
   right:60px;
@@ -148,6 +148,7 @@ font-size: 2.2rem;
   padding:0.5em;
   cursor: pointer;
   text-align: center;
+  letter-spacing: -0.12em;
   color:white;
 /*  background-color: rgba(0,0,0,0.2);
 */ background-color: #C62828;

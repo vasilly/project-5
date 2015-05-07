@@ -8,9 +8,9 @@
   <title>Restaurant</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-<!--   <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="small-device.css" />
+  <!--   <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="small-device.css" />
  -->
-<!--  <link rel="stylesheet" media="(orientation: landscape)" href="landscape.css">
+  <!--  <link rel="stylesheet" media="(orientation: landscape)" href="landscape.css">
 -->
   <!-- example -->
 
@@ -76,12 +76,15 @@
 
   </div>
 
-  <span class="bot-right noselect shadow" id="text-sizer">
-<!--     <span class="md" id="A1"><i class="fa fa-mobile"></i></span>
+  <span class="btn-resize noselect shadow" id="text-sizer">
+    <!--     <span class="md" id="A1"><i class="fa fa-mobile"></i></span>
 <span class="md" id="A2"><i class="fa fa-tablet"></i></span>
 <span class="md" id="A3"><i class="fa fa-keyboard-o"></i></span> -->
 
-    <span class="sm10" id="A1">A</span><span class="sm8" id="A2">A</span><span class="sm6" id="A3">A</span></span>
+    <span class="sm10" id="A1">A</span>
+    <span class="sm8" id="A2">A</span>
+    <span class="sm6" id="A3">A</span>
+  </span>
 
   <span class="center noselect button-box" id="spinner">
     <i class="fa fa-refresh fa-spin  fa-4x"></i>
@@ -91,14 +94,14 @@
 
   <div class="" data-ng-app="images" data-ng-controller="imagesController">
 
-    <div class="filters">
-
-      <select onchange="filtered();" data-ng-model="showModes" data-ng-model-options="{debounce:500}">
+    <div class="_filters">
+      <select class="standardCardWidth" onchange="filtered();" data-ng-model="showModes" data-ng-model-options="{debounce:500}">
         <option value="" selected>All Meals</option>
         <option data-ng-repeat="item in list | orderBy:'Mode' | unique:'Mode'" value="{{item.Mode}}">{{item.Mode}}</option>
       </select>
 
-      <select onchange="filtered();" data-ng-model="showType" data-ng-model-options="{debounce:500}">
+
+      <select class="standardCardWidth" onchange="filtered();" data-ng-model="showType" data-ng-model-options="{debounce:500}">
         <option value="" selected>All Meal Types</option>
         <option data-ng-repeat="item in list | orderBy:'Type' | unique:'Type'" value="{{item.Type}}">{{item.Type}}</option>
       </select>
