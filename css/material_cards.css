@@ -161,6 +161,8 @@ span, .card__title {
 
   -webkit-transition: width 0.65s, height 0.65s, background-color 0.65s, font 0.65s, -webkit-transform 0.65s;
   transition: width 0.65s, height 0.65s, background-color 0.65s, font 0.65s, transform 0.65s;
+  transition-delay: 0.5s;
+
   /*   -webkit-transition: all 0.2s ease;
 -moz-transition: all 0.2s ease;
 -o-transition: all 0.2s ease;
@@ -181,6 +183,7 @@ span, .card__title {
   border: 1px solid;
   border-radius: 3px;
   padding: 0.5em;
+
 }
 /*   #A1{font-size:1cm;}
 #A2{font-size:0.5cm;}
@@ -230,10 +233,16 @@ span, .card__title {
   -ms-user-select: none;
   user-select: none;
 }
-.shadow {
+.shadow, .card {
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+  transition-delay: 0;
   box-shadow: 2px 2px 8px -3px #000;
 }
 .shadow:hover, .card:hover {
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
   box-shadow: 3px 3px 15px -3px #000;
 }
 /* offset-x | offset-y | blur-radius | color */
@@ -269,3 +278,29 @@ card__p {}
   position: fixed;
   z-index: 2;
 } */
+
+.center2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1%;
+    height: 1%;
+    background-color: #b0e0e6;
+}
+
+/* transition-timing-function: ease */
+/* transition-delay: 2s; */
+
+.delay1 {
+position: relative;
+transition-property: font-size;
+transition-duration: 4s;
+transition-delay: 1s;
+font-size: 14px;
+}
+
+.delay1:hover {
+transition-property: font-size;
+transition-duration: 4s;
+transition-delay: 1s;
+font-size: 36px;
+}
