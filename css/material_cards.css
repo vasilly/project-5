@@ -234,9 +234,6 @@ span, .card__title {
   user-select: none;
 }
 .shadow, .card {
-  transition-property: box-shadow;
-  transition-duration: 0.2s;
-  transition-delay: 0;
   box-shadow: 2px 2px 8px -3px #000;
 }
 .shadow:hover, .card:hover {
