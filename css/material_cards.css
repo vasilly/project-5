@@ -233,13 +233,11 @@ span, .card__title {
   -ms-user-select: none;
   user-select: none;
 }
-.shadow, .card {
+.shadow {
   box-shadow: 2px 2px 8px -3px #000;
 }
 .shadow:hover, .card:hover {
-  transition-property: box-shadow;
-  transition-duration: 0.5s;
-  transition-delay: 0.1s;
+  
   box-shadow: 3px 3px 15px -3px #000;
 }
 /* offset-x | offset-y | blur-radius | color */

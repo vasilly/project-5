@@ -4,6 +4,7 @@ body {
 	/* max-width: 1100px; */
 	/* margin: 0 auto 1em auto; */
 }
+
 input, select {
 	float: left;
 	font-size: 100%;
@@ -32,7 +33,7 @@ li {
 	transition: all ease 600ms 0s;
 	-webkit-transition: all ease 600ms 0s;
 }
-.filter_down li {
+.slide-right li {
 	transform: translate(1600px,0); /* transform >=ie9 scale(0) */;
 	-webkit-transform: translate(1600px,0); /* scale(0) */;
 	opacity: 0;

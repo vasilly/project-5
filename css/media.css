@@ -1,7 +1,7 @@
 .overide-card_width .card, .overide-card_width input, .overide-card_width select {
-  /*overide default with js on buttonclick A1*/
-
-  margin: 0.5rem auto;
+  /* overide default with js on buttonclick A1 */
+  /* make full-width */
+  /* margin: 0.5rem auto; */
   width: 100%
 }
 
@@ -11,5 +11,5 @@
 and (min-device-width : 320px)
 and (max-device-width : 480px)
 and (orientation : portrait) {
-  .mobile_320-480-portrait {color: green;}
+  .mobile_320-480-portrait {}
 }
